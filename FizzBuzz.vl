@@ -55,7 +55,7 @@
             <ControlPoint Id="B7re7SJx4gePVlyAEsZW0M" Bounds="443,340" Alignment="Top" />
             <ControlPoint Id="AbT7pqVgYlkQMwipL8Tgy8" Bounds="443,417" Alignment="Bottom" />
           </Node>
-          <Node Bounds="441,500,145,19" Id="S0Cy0OVfiNGLmWacaz5kXW">
+          <Node Bounds="421,524,145,19" Id="S0Cy0OVfiNGLmWacaz5kXW">
             <p:NodeReference LastCategoryFullName="Graphics.Skia" LastSymbolSource="VL.Skia.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
@@ -82,6 +82,22 @@
             <Pin Id="SjqVrOkZTpXQEjmWtDrbaD" Name="Enabled" Kind="InputPin" />
             <Pin Id="GOIpLEo0gZYPs4XHAxau3E" Name="Output" Kind="OutputPin" />
           </Node>
+          <Node Bounds="441,485,125,19" Id="VBLOLqq36pKPD1kES7IVRU">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia.Transform" LastSymbolSource="VL.Skia.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Camera" />
+            </p:NodeReference>
+            <Pin Id="BuVe1RITlwPQaCRHCuhnqa" Name="Input" Kind="InputPin" />
+            <Pin Id="DQGO5iQgHZeO9HEpMf1Vqs" Name="Initial Translate" Kind="InputPin" />
+            <Pin Id="MZgwpgtQjE4PB1IWx3YFGC" Name="Initial Zoom" Kind="InputPin" DefaultValue="0.4" />
+            <Pin Id="LPR7pHdU37UOmoCzlzKis6" Name="Zoom Speed" Kind="InputPin" />
+            <Pin Id="P9K9LP6cEM1LeXn27kGEtn" Name="Minimum Zoom" Kind="InputPin" />
+            <Pin Id="JHJThFP4GHsMa00V5fgpm6" Name="Maximum Zoom" Kind="InputPin" />
+            <Pin Id="M4sz5BvPOUkMoPJ9Kr9VXe" Name="Reset" Kind="InputPin" />
+            <Pin Id="LZBCUw7ZrXpMc4GUVPFTJQ" Name="Output" Kind="OutputPin" />
+            <Pin Id="BWQlKGswjubPWoFzNLQPaB" Name="Zoom" Kind="OutputPin" />
+            <Pin Id="Lt7ebge1E2tNcNAAIpHiuH" Name="Idle" Kind="OutputPin" />
+          </Node>
         </Canvas>
         <Patch Id="VumeqPCQEpCMqW5cvoJHGL" Name="Create" />
         <Patch Id="OMd6hB08HjqOYvXoFUvqzT" Name="Update" />
@@ -93,7 +109,8 @@
         <Link Id="GiCBg4c7hR9NjeNuyqdCQx" Ids="B7re7SJx4gePVlyAEsZW0M,Fd6uL4qHjniNpIbbodNNKI" />
         <Link Id="BjxF9GCpA3bPPf0B66VZBa" Ids="CpnSYxE1hNgLxgU2sIKfSv,AbT7pqVgYlkQMwipL8Tgy8" />
         <Link Id="JuHvQjk1gIdLtHxHdTZ6No" Ids="AbT7pqVgYlkQMwipL8Tgy8,M4xIKiwvFelPKhchDlbVEw" />
-        <Link Id="Tfp89EyysJbO52gKCoyKGI" Ids="GOIpLEo0gZYPs4XHAxau3E,QjdOccAahZIOCq0VvetR3s" />
+        <Link Id="B2BaEtsCAl7MYDtVzkUTAB" Ids="GOIpLEo0gZYPs4XHAxau3E,BuVe1RITlwPQaCRHCuhnqa" />
+        <Link Id="GCguBs44daBPxqZR38smn8" Ids="LZBCUw7ZrXpMc4GUVPFTJQ,QjdOccAahZIOCq0VvetR3s" />
       </Patch>
     </Node>
   </Patch>
