@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="CctVTRaCqtNN7jA2MsCINr" LanguageVersion="2021.4.10.1043" Version="0.128">
+  <Patch Id="TVIcuqWZEN1OGt3WhVAfHr">
+    <Canvas Id="T6msmF5BmaBMHu9Hpa15pg" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="VP6XxNTZR3qO4mJdqBaAq6">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="KAtn6kbHoXYPotWN7i5Ayo">
+        <Canvas Id="LqSISVgNm2fNSFd6CEA9ZI" CanvasType="Group">
+          <Node Bounds="415,830,145,19" Id="NuccxPWCOq4NmTHBnQT3Fk">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia" LastSymbolSource="VL.Skia.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Renderer" />
+            </p:NodeReference>
+            <Pin Id="CtQcORDiyAHOQAt2k4pwfw" Name="Bounds" Kind="InputPin" DefaultValue="1375, 615, 697, 439" />
+            <Pin Id="QUtxBZdr7yiNDwwsxH22hx" Name="Input" Kind="InputPin" />
+            <Pin Id="MtxqIyAYubHPYywtRZCwpr" Name="Color" Kind="InputPin" />
+            <Pin Id="FYn1QKeq1XLMkUYaGkEtzW" Name="Clear" Kind="InputPin" />
+            <Pin Id="DcA3Z4UY8Q7L1adXArgHWP" Name="Space" Kind="InputPin" />
+            <Pin Id="QnINbx62ijvOH8EFgfwcjy" Name="Show Cursor" Kind="InputPin" />
+            <Pin Id="SqNL1wylMzJQJLCJTwObnA" Name="VSync" Kind="InputPin" />
+            <Pin Id="DN6fIu3AA2KNXS9wsv3LbT" Name="Enabled" Kind="InputPin" />
+            <Pin Id="DpOIh6QRGwWN6v3nGbnplo" Name="Form" Kind="OutputPin" />
+            <Pin Id="PpLxrZXOnOsPBRHI3jAwKB" Name="ClientBounds" Kind="OutputPin" />
+            <Pin Id="KucHozuIOBNLtUvCHFWA5v" Name="Render Time" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="434,559,85,19" Id="PjiR97qIBfBMPlofJh4x9D">
+            <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="GridSpread (2D)" />
+            </p:NodeReference>
+            <Pin Id="SLUayfVqW23O7UrrsqX37a" Name="Center" Kind="InputPin" />
+            <Pin Id="MahVvpqR32cNA1wbOccGTM" Name="Width" Kind="InputPin" DefaultValue="3.5, 1.7" />
+            <Pin Id="O8E3VIFZzRSOu7QOIIZRcw" Name="Alignment" Kind="InputPin" DefaultValue="Block" />
+            <Pin Id="PiJUkOD829YLN8aulj66J4" Name="Phase" Kind="InputPin" />
+            <Pin Id="BfCBUoGmPqpQHNtlflsf1K" Name="Count" Kind="InputPin" DefaultValue="10, 10" />
+            <Pin Id="Cuco2js7UDzPaxInb2uN8I" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="422,614,129,86" Id="PVGxxTqcb8tM7cn7hcT8Dp">
+            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
+              <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+              <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:NodeReference>
+            <Pin Id="O2ZjKo4FhFxPQ2zh5hDldk" Name="Break" Kind="OutputPin" />
+            <Patch Id="JpM3roAhHYiN4YZ5EKxwWH" ManuallySortedPins="true">
+              <Patch Id="KPH6bLJfEypMBzD4TJwudu" Name="Create" ManuallySortedPins="true" />
+              <Patch Id="KsFjfmzC6C9MekgrnUHvHJ" Name="Update" ManuallySortedPins="true" />
+              <Patch Id="TfRRfmAGfvaLuLuz2mrEMj" Name="Dispose" ManuallySortedPins="true" />
+              <Node Bounds="434,650,105,19" Id="IDij0OeLZCjO7hKp4VKy96">
+                <p:NodeReference LastCategoryFullName="Graphics.Skia.Layers.Text" LastSymbolSource="VL.Skia.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="ProcessAppFlag" Name="Text" />
+                </p:NodeReference>
+                <Pin Id="LrXEMvQvRijOhBMnhfxrMY" Name="Position" Kind="InputPin" />
+                <Pin Id="VFgJwGItQqLNTQbBIRSaYx" Name="Size" Kind="InputPin" />
+                <Pin Id="APDXU5Dv72rN1NHZ7Jm16u" Name="Anchor" Kind="InputPin" />
+                <Pin Id="DBmZhNugkf9L3UKaeQWXd8" Name="Text" Kind="InputPin" />
+                <Pin Id="GzMDbmQpFQiOj85gKBEFM9" Name="Paint" Kind="InputPin" />
+                <Pin Id="BUVlxu6iy9kPfq189F69TD" Name="Enabled" Kind="InputPin" />
+                <Pin Id="OgqRSM4fp4FLowcQvqCTp9" Name="Output" Kind="OutputPin" />
+                <Pin Id="ISiW2hJ9dTwLRpaJhlIKbp" Name="Baseline Position" Kind="OutputPin" />
+              </Node>
+            </Patch>
+            <ControlPoint Id="SSmBApfN5KNMr1Ya2eoT36" Bounds="436,620" Alignment="Top" />
+            <ControlPoint Id="MxvFBNFC3ZCPqOKb8poY3H" Bounds="436,694" Alignment="Bottom" />
+          </Node>
+          <Node Bounds="435,763,45,19" Id="Fpges2v0VOCQAIyEIjGhqx">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia" LastSymbolSource="VL.Skia.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Group (Spectral)" />
+            </p:NodeReference>
+            <Pin Id="H8WhdOdrxIbMFR8QJ94cVd" Name="Input" Kind="InputPin" />
+            <Pin Id="CSS1A2wr5AAMDrtD9Lpsta" Name="Debug" Kind="InputPin" />
+            <Pin Id="NkV17r2WhA6N3MzrjLxzsg" Name="Enabled" Kind="InputPin" />
+            <Pin Id="VnMyUgJ9QzKOm8aBRgT3S2" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="435,801,125,19" Id="Anb5l9eh1nCQAFx6WjPOk7">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia.Transform" LastSymbolSource="VL.Skia.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Camera" />
+            </p:NodeReference>
+            <Pin Id="IDs0Cqn88WsL30dfiXDXQm" Name="Input" Kind="InputPin" />
+            <Pin Id="NxcJxyDjRvMO9FwpRfHcl6" Name="Initial Translate" Kind="InputPin" />
+            <Pin Id="RM9UIBrAjROLBVzrfgB4V9" Name="Initial Zoom" Kind="InputPin" DefaultValue="0.73" />
+            <Pin Id="LTk1qADXRbGNfDtDXio49P" Name="Zoom Speed" Kind="InputPin" />
+            <Pin Id="LgskAPx4geUNe3kBNZFCTq" Name="Minimum Zoom" Kind="InputPin" />
+            <Pin Id="Us5aB5piu1fPPY9udiCYx2" Name="Maximum Zoom" Kind="InputPin" />
+            <Pin Id="Kk5puant10OOU8Ntu0elZa" Name="Reset" Kind="InputPin" />
+            <Pin Id="IPF2XUmRsrZPFSrqLwGMie" Name="Output" Kind="OutputPin" />
+            <Pin Id="J0kBjTDD4GCPTPfcO3hXnc" Name="Zoom" Kind="OutputPin" />
+            <Pin Id="S98gqBQdTvcPbZznNp3UE0" Name="Idle" Kind="OutputPin" />
+          </Node>
+        </Canvas>
+        <Patch Id="MvauuZAkTkKPkk4pOxGJti" Name="Create" />
+        <Patch Id="RvSQ6AvCv2XLvpLUYpVMxM" Name="Update" />
+        <ProcessDefinition Id="EYttDIG9E70P0s32c0u8AP">
+          <Fragment Id="DPkezcZgfYpNMlqyrGMGm0" Patch="MvauuZAkTkKPkk4pOxGJti" Enabled="true" />
+          <Fragment Id="USbSFJzos3wPqe8Na3u1vn" Patch="RvSQ6AvCv2XLvpLUYpVMxM" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="DC4bzUzIKWfQQ3BOfgBnMr" Ids="Cuco2js7UDzPaxInb2uN8I,SSmBApfN5KNMr1Ya2eoT36" />
+        <Link Id="VnANYp45wvLMEZEFlnkC7u" Ids="SSmBApfN5KNMr1Ya2eoT36,LrXEMvQvRijOhBMnhfxrMY" />
+        <Link Id="StkyrUcL4sSMIAiE2f3Sag" Ids="OgqRSM4fp4FLowcQvqCTp9,MxvFBNFC3ZCPqOKb8poY3H" />
+        <Link Id="DuYx32egjiaN7PB7BfheWZ" Ids="MxvFBNFC3ZCPqOKb8poY3H,H8WhdOdrxIbMFR8QJ94cVd" />
+        <Link Id="HGDgkNnvhFyQAEOURclPOQ" Ids="VnMyUgJ9QzKOm8aBRgT3S2,IDs0Cqn88WsL30dfiXDXQm" />
+        <Link Id="ViCL9X4YJ31LVY5xlaFRhL" Ids="IPF2XUmRsrZPFSrqLwGMie,QUtxBZdr7yiNDwwsxH22hx" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="Nslrb96q0CEM4yoKn71mII" Location="VL.CoreLib" Version="2021.4.10" />
+  <NugetDependency Id="ARIUYf0LD6gPS4KmmDwW3D" Location="VL.Skia" Version="2021.4.10" />
+</Document>
